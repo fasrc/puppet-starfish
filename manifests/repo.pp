@@ -4,7 +4,7 @@
 class starfish::repo inherits starfish::params (
   $url       = $starfish::params::repo_url,
   $repo_name = $starfish::params::repo_name,
-  $proxy     = undef,
+  $proxy     = $starfish::params::proxy,
   $descr     = $starfish::params::repo_descr,
   $gpgcheck  = $starfish::params::repo_gpgcheck,
   $gpgkey    = $starfish::params::repo_gpgkey,
