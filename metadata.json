@@ -1,0 +1,14 @@
+{
+  "name": "puppet-starfish",
+  "version": "0.1.0",
+  "author": "Harvard FAS Research Computing",
+  "summary": "Install and configure Starfish storage management (http://www.starfishstorage.com)",
+  "license": "Apache 2.0",
+  "source": "https://github.com/fasrc/puppet-starfish",
+  "project_page": "https://github.com/fasrc/puppet-starfish",
+  "issues_url": "https://github.com/fasrc/puppet-starfish/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
