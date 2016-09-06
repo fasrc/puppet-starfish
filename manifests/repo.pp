@@ -3,7 +3,6 @@
 #
 class starfish::repo (
 
-  $version         = $::starfish::params::version,
   $repo_url        = $::starfish::params::repo_url,
   $repo_name       = $::starfish::params::repo_name,
   $proxy           = $::starfish::params::proxy,
