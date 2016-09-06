@@ -42,7 +42,9 @@ class starfish inherits starfish::params{
   class { 'starfish::config': } ~>
   class { 'starfish::service': }
 
+  contain 'starfish::repo'
   contain 'starfish::install'
+  contain 'starfish::config'
   contain 'starfish::service'
 
   #Class['starfish']
