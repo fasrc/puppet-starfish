@@ -35,7 +35,19 @@
 #
 # Copyright 2016 Your name here, unless otherwise noted.
 #
-class starfish inherits starfish::params{
+class starfish (
+  $version         = $::starfish::params::version,
+  $repo_url        = $::starfish::params::repo_url,
+  $repo_name       = $::starfish::params::repo_name,
+  $proxy           = $::starfish::params::proxy,
+  $descr           = $::starfish::params::repo_descr,
+  $gpgcheck        = $::starfish::params::repo_gpgcheck,
+  $gpgkey          = $::starfish::params::repo_gpgkey,
+  $enabled         = $::starfish::params::repo_enabled,
+  $super_repo_name = $::starfish::params::super_repo_name,
+  $super_descr     = $::starfish::params::super_descr,
+  $super_repo_url  = $::starfish::params::super_repo_url
+) inherits starfish::params {
 
   class { 'starfish::repo': } ->
   class { 'starfish::install': } ->
