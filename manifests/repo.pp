@@ -13,25 +13,25 @@ class starfish::repo (
   $enabled         = $::starfish::params::repo_enabled,
   $super_repo_name = $::starfish::params::super_repo_name,
   $super_descr     = $::starfish::params::super_descr,
-  $super_url       = $::starfish::params::super_url
+  $super_repo_url  = $::starfish::params::super_repo_url
   
 ) inherits starfish::params {
   
-  validate_string($url)
+  validate_string($repo_url)
   ensure_resource('yumrepo', $repo_name, {
     'ensure'   => 'present',
     'descr'    => $descr,
-    'baseurl'  => $url,
+    'baseurl'  => $repo_url,
     'gpgcheck' => $gpgcheck,
     'gpgkey'   => $gpgkey,
     'enabled'  => $enabled,
     'proxy'    => $proxy,
     })
-  validate_string($super_url)
+  validate_string($super_repo_url)
   ensure_resource('yumrepo', $super_repo_name, {
     'ensure'   => 'present',
     'descr'    => $super_descr,
-    'baseurl'  => $super_url,
+    'baseurl'  => $super_repo_url,
     'gpgcheck' => $gpgcheck,
     'gpgkey'   => $gpgkey,
     'enabled'  => $enabled,
