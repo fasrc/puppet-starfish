@@ -25,7 +25,7 @@ class starfish::repo (
     'gpgkey'   => $gpgkey,
     'enabled'  => $enabled,
     'proxy'    => $proxy,
-    })
+  })
   validate_string($super_repo_url)
   ensure_resource('yumrepo', $super_repo_name, {
     'ensure'   => 'present',
@@ -35,5 +35,5 @@ class starfish::repo (
     'gpgkey'   => $gpgkey,
     'enabled'  => $enabled,
     'proxy'    => $proxy,
-    })
+  })
 }

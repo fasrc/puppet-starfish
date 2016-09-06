@@ -35,7 +35,7 @@
 #
 # Copyright 2016 Your name here, unless otherwise noted.
 #
-class starfish inherits grafana::params{
+class starfish inherits starfish::params{
 
   class { 'starfish::repo': } ->
   class { 'starfish::install': } ->
