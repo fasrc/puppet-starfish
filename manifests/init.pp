@@ -36,7 +36,6 @@
 # Copyright 2016 Your name here, unless otherwise noted.
 #
 class starfish (
-  $version         = $::starfish::params::version,
   $repo_url        = $::starfish::params::repo_url,
   $repo_name       = $::starfish::params::repo_name,
   $proxy           = $::starfish::params::proxy,
