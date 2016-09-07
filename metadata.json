@@ -1,5 +1,5 @@
 {
-  "name": "fasrc-starfish",
+  "name": "puppet-starfish",
   "version": "0.1.0",
   "author": "Harvard FAS Research Computing",
   "summary": "Install and configure Starfish storage management (http://www.starfishstorage.com)",
