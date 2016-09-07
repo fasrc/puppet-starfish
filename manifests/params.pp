@@ -5,7 +5,6 @@
 class starfish::params {
   $repo_url        = undef
   $super_repo_url  = undef
-  $version         = undef
   $repo_name       = 'Starfish'
   $proxy           = undef
   $descr           = 'Starfish Repository'
