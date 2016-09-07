@@ -3,8 +3,8 @@
 # parameters used by the module
 #
 class starfish::params {
-  $repo_url
-  $super_repo_url
+  $repo_url        = undef
+  $super_repo_url  = undef
   $version         = undef
   $repo_name       = 'Starfish'
   $proxy           = undef
