@@ -42,7 +42,6 @@ class starfish (
   $proxy           = $::starfish::params::proxy,
   $descr           = $::starfish::params::repo_descr,
   $gpgcheck        = $::starfish::params::repo_gpgcheck,
-  $gpgkey          = $::starfish::params::repo_gpgkey,
   $enabled         = $::starfish::params::repo_enabled,
   $super_repo_name = $::starfish::params::super_repo_name,
   $super_descr     = $::starfish::params::super_descr,

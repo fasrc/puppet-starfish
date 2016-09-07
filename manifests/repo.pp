@@ -9,9 +9,6 @@ class starfish::repo inherits starfish::params {
     'descr'    => $descr,
     'baseurl'  => $repo_url,
     'gpgcheck' => $gpgcheck,
-    if $gpgkey {
-      'gpgkey'   => $gpgkey,
-    }
     'enabled'  => $enabled,
     'proxy'    => $proxy,
   })
@@ -21,9 +18,6 @@ class starfish::repo inherits starfish::params {
     'descr'    => $super_descr,
     'baseurl'  => $super_repo_url,
     'gpgcheck' => $gpgcheck,
-    if $gpgkey {
-      'gpgkey'   => $gpgkey,
-    }
     'enabled'  => $enabled,
     'proxy'    => $proxy,
   })
